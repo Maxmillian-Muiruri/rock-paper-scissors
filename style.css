@@ -68,31 +68,35 @@ body {
 .scissors {
   margin-left: 10rem;
   background-color: rgb(250, 251, 242);
+  padding: 3px;
+
   height: 4.7rem;
   width: 4.7rem;
   border-radius: 25rem;
   border: 5px solid #fdcc06;
-
 }
 .paper {
   margin-right: 4rem;
   background-color: #fff;
   border-radius: 25rem;
+  padding: 3px;
   height: 4.7rem;
   width: 4.7rem;
   border: 5px solid #2a45c2;
 }
 .rock {
   display: flex;
+  padding: 3px;
+
   background-color: #fff;
   border-radius: 25rem;
+
   height: 5rem;
   width: 5rem;
   border: 5px solid #f03d3d;
   margin-top: 8rem;
   margin-right: 5rem;
   margin-left: 4rem;
-
 }
 .hands .hand {
   cursor: pointer;
@@ -101,4 +105,57 @@ body {
 .hands .hand:hover {
   transform: translate(0px, -8px 0px);
   background-color: #f03d3d;
+}
+.contest {
+  width: 900px;
+  display: flex;
+  margin-top: 50px;
+  display: none;
+}
+
+.contest img {
+  width: 275px;
+  height: 275px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.handimagecontainer {
+  display: flex;
+  align-content: center;
+}
+.contest .handimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+.referee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.referee h1 {
+  font-size: 45px;
+}
+.newGame {
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+}
+
+.newGame:hover {
+  background-color: bisque;
+  transform: translate(0px, -2px, 0px);
 }
