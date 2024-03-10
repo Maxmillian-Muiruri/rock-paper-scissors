@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Rock, Paper, Scissors</title>
+    <script src="/js/index.js"></script>
 
     <!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
 
@@ -38,13 +39,43 @@
       </div>
       <div class="hands">
         <div class="hand paper">
-          <img src="images/icon-paper.svg" alt="" />
+          <img
+            src="images/icon-paper.svg"
+            alt=""
+            onclick="pickUserHand('paper')"
+          />
         </div>
         <div class="hand scissors">
-          <img src="images/icon-scissors.svg" alt="" />
+          <img
+            src="images/icon-scissors.svg"
+            alt=""
+            onclick="pickUserHand('scissors')"
+          />
         </div>
         <div class="hand rock">
-          <img src="images/icon-rock.svg" alt="" />
+          <img
+            src="images/icon-rock.svg"
+            alt=""
+            onclick="pickUserHand('rock')"
+          />
+        </div>
+      </div>
+      <div class="contest">
+        <div class="userhand">
+          <h1>YOU PICKED</h1>
+          <div class="handimagecontainer">
+            <img id="userPickImage" src="/images/icon-paper.svg"  alt="" />
+          </div>
+        </div>
+        <div class="referee">
+          <div class="decision"><h1>YOU WIN</h1></div>
+          <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+          <h1>THE HOUSE PICKED</h1>
+          <div class="handimagecontainer">
+            <img id="computerPickImage" src="images/icon-scissors.svg" alt="">
+          </div>
         </div>
       </div>
     </div>
