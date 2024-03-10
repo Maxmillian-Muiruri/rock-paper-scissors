@@ -58,26 +58,47 @@ body {
   background-image: url(images/bg-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 476px;
-  height: 430px;
+  width: 415px;
+  height: 415px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 100px;
-
 }
-.scisorrs {
-  margin-left: 20px;
+.scissors {
+  margin-left: 10rem;
+  background-color: rgb(250, 251, 242);
+  height: 4.7rem;
+  width: 4.7rem;
+  border-radius: 25rem;
+  border: 5px solid #fdcc06;
 
 }
 .paper {
-  margin-right: 20px;
+  margin-right: 4rem;
+  background-color: #fff;
+  border-radius: 25rem;
+  height: 4.7rem;
+  width: 4.7rem;
+  border: 5px solid #2a45c2;
+}
+.rock {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25rem;
+  height: 5rem;
+  width: 5rem;
+  border: 5px solid #f03d3d;
+  margin-top: 8rem;
+  margin-right: 5rem;
+  margin-left: 4rem;
+
 }
 .hands .hand {
   cursor: pointer;
   transition: all 0.25s;
-
 }
-.hands .hand:hover{
-  transform: translate(0px, -0px 0px);
+.hands .hand:hover {
+  transform: translate(0px, -8px 0px);
+  background-color: #f03d3d;
 }
